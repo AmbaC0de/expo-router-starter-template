@@ -2,9 +2,8 @@ import { useAppTheme } from "@/hooks/useAppTheme";
 import { ThemeMode } from "@/store/slices/theme";
 import { TEXT_STYLE } from "@/theme/typography";
 import { Ionicons } from "@expo/vector-icons";
-import { Text } from "@react-navigation/elements";
-import { useTheme } from "@react-navigation/native";
-import { StyleSheet, View } from "react-native";
+import { useTheme } from "expo-router";
+import { StyleSheet, Text, View } from "react-native";
 import { SheetManager, SheetProps } from "react-native-actions-sheet";
 import { RectButton } from "react-native-gesture-handler";
 import AppActionSheet from "./AppActionSheet";
@@ -52,7 +51,7 @@ function ThemeSheet(props: SheetProps<"theme-sheet">) {
                 styles.item,
                 {
                   backgroundColor:
-                    mode === t.value ? colors.primary + "10" : "transparent",
+                    mode === t.value ? colors.primaryMuted : "transparent",
                 },
               ]}
               onPress={() => handleSelect(t.value)}

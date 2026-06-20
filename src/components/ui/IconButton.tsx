@@ -1,6 +1,6 @@
 import { HapticManager } from "@/utils/haptics";
-import { useTheme } from "@react-navigation/native";
-import React, { PropsWithChildren } from "react";
+import { useTheme } from "expo-router/react-navigation";
+import { PropsWithChildren } from "react";
 import { StyleSheet } from "react-native";
 import {
   BorderlessButton,

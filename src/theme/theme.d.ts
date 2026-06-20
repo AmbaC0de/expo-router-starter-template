@@ -1,26 +1,30 @@
-import "@react-navigation/native";
+import "expo-router/react-navigation";
+import { OpaqueColorValue } from "react-native";
+
+type ColorValue = string | OpaqueColorValue;
 
 // Define the standard colors expected by React Navigation
 type StandardThemeColors = {
-  primary: string;
-  background: string;
-  card: string;
-  text: string;
-  border: string;
-  notification: string;
+  primary: ColorValue;
+  background: ColorValue;
+  card: ColorValue;
+  text: ColorValue;
+  border: ColorValue;
+  notification: ColorValue;
 };
 
 // Define your custom colors here
 type CustomThemeColors = {
-  error: string;
-  textSecondary: string;
-  textOposite: string;
-  success: string;
-  fail: string;
-  warning: string;
-  dark: string;
-  darkCard: string;
-  white: string;
+  primaryMuted: ColorValue;
+  error: ColorValue;
+  textSecondary: ColorValue;
+  textOposite: ColorValue;
+  success: ColorValue;
+  fail: ColorValue;
+  warning: ColorValue;
+  dark: ColorValue;
+  darkCard: ColorValue;
+  white: ColorValue;
   // Add other custom colors here
 };
 
@@ -39,7 +43,7 @@ const FontWeights = [
 ] as const;
 type FontWeightsType = (typeof FontWeights)[number];
 
-declare module "@react-navigation/native" {
+declare module "expo-router/react-navigation" {
   export interface Theme {
     dark: boolean;
     colors: StandardThemeColors & CustomThemeColors;

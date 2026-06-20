@@ -1,7 +1,7 @@
 import { HapticManager } from "@/utils/haptics";
 import { Ionicons } from "@expo/vector-icons";
-import { useTheme } from "@react-navigation/native";
-import React, { PropsWithChildren } from "react";
+import { useTheme } from "expo-router/react-navigation";
+import { PropsWithChildren } from "react";
 import {
   ActivityIndicator,
   StyleProp,

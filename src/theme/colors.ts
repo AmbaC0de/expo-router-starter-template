@@ -1,4 +1,8 @@
-import { DarkTheme, DefaultTheme, Theme } from "@react-navigation/native";
+// import { DarkTheme, DefaultTheme, Theme } from "expo-router/react-navigation";
+
+// import { DarkTheme, DefaultTheme } from "expo-router";
+import { DarkTheme, DefaultTheme, Theme } from "expo-router/react-navigation";
+// import { Theme } from "expo-router/build/react-navigation";
 
 export const AppLightTheme: Theme = {
   dark: false,
@@ -7,6 +11,7 @@ export const AppLightTheme: Theme = {
     background: "#F2F2F2",
     dark: "#0f0f0f",
     primary: "#FF4500",
+    primaryMuted: "#FF450010",
     error: "#B00020",
     textSecondary: "#a8a7a6c7", // Cool gray for better modern look
     textOposite: "#FFFFFF",
@@ -26,6 +31,7 @@ export const AppDarkTheme: Theme = {
   colors: {
     ...DarkTheme.colors,
     primary: "#FF4500",
+    primaryMuted: "#FF450010",
     background: "#0f0f0f",
     dark: "#0f0f0f",
     card: "#1E1E1E",
