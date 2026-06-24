@@ -3,7 +3,6 @@ import { ThemeMode } from "@/store/slices/theme";
 import BottomSheet, { BottomSheetView } from "@expo/ui/community/bottom-sheet";
 import { IoniconsIconName } from "@react-native-vector-icons/ionicons";
 import { useTheme } from "expo-router";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
 import ItemButton from "../ui/ItemButton";
 
 type ThemeSelectionSheetProps = {
@@ -13,7 +12,6 @@ type ThemeSelectionSheetProps = {
 const ThemeSelectionSheet = ({ sheetRef }: ThemeSelectionSheetProps) => {
   const { colors } = useTheme();
   const { setTheme, mode } = useAppTheme();
-  const { bottom } = useSafeAreaInsets();
 
   const themeOptions: {
     label: string;
