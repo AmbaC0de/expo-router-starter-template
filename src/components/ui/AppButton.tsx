@@ -1,5 +1,8 @@
 import { HapticManager } from "@/utils/haptics";
-import { Ionicons } from "@expo/vector-icons";
+import {
+  Ionicons,
+  IoniconsIconName,
+} from "@react-native-vector-icons/ionicons";
 import { useTheme } from "expo-router/react-navigation";
 import { PropsWithChildren } from "react";
 import {
@@ -19,8 +22,8 @@ type ButtonProps = PropsWithChildren<{
   loading?: boolean;
   disabled?: boolean;
   variant?: "contained" | "outlined" | "text";
-  endIcon?: keyof typeof Ionicons.glyphMap;
-  startIcon?: keyof typeof Ionicons.glyphMap;
+  endIcon?: IoniconsIconName;
+  startIcon?: IoniconsIconName;
   endIconStyle?: TextStyle;
   startIconStyle?: TextStyle;
 }>;

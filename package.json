@@ -11,6 +11,8 @@
     "typecheck": "tsc -b --noemit"
   },
   "dependencies": {
+    "@expo/ui": "~56.0.18",
+    "@react-native-vector-icons/ionicons": "^13.1.2",
     "@reduxjs/toolkit": "^2.11.2",
     "axios": "^1.13.6",
     "expo": "~56.0.12",
