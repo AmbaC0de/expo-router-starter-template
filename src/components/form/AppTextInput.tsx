@@ -1,4 +1,7 @@
-import { Ionicons } from "@expo/vector-icons";
+import {
+  Ionicons,
+  IoniconsIconName,
+} from "@react-native-vector-icons/ionicons";
 import { useTheme } from "expo-router/react-navigation";
 import { useState } from "react";
 import {
@@ -33,7 +36,7 @@ type AppTextInputProps<T extends FieldValues> = {
   numberOfLines?: number;
   keyboardType?: KeyboardTypeOptions;
   secureTextEntry?: boolean;
-  startIcon?: keyof typeof Ionicons.glyphMap;
+  startIcon?: IoniconsIconName;
 };
 
 const AppTextInput = <T extends FieldValues>({
