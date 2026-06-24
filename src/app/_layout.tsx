@@ -10,11 +10,11 @@ import { Provider } from "react-redux";
 
 const InitialLayout = () => {
   const { isAuthenticated } = useAppSelector(selectAuth);
-  const { mode, appTheme } = useAppTheme();
+  const { mode, appTheme, appScheme } = useAppTheme();
 
   return (
     <ThemeProvider value={appTheme}>
-      <StatusBar style={mode === "light" ? "dark" : "light"} />
+      <StatusBar style={appScheme === "light" ? "dark" : "light"} />
       <Stack>
         <Stack.Protected guard={isAuthenticated}>
           <Stack.Screen name="(protected)" options={{ headerShown: false }} />

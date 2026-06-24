@@ -20,6 +20,7 @@ export const useAppTheme = () => {
   const dispatch = useAppDispatch();
   const { mode } = useAppSelector(selectTheme);
   const systemColorScheme = useColorScheme();
+  const appScheme = mode === "system" ? systemColorScheme : mode;
 
   const appTheme = getAppTheme(mode, systemColorScheme);
 
@@ -31,5 +32,6 @@ export const useAppTheme = () => {
     mode,
     setTheme: updateTheme,
     appTheme,
+    appScheme,
   };
 };
