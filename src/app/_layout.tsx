@@ -15,8 +15,6 @@ const InitialLayout = () => {
   return (
     <ThemeProvider value={appTheme}>
       <StatusBar style={mode === "light" ? "dark" : "light"} />
-      {/* <SheetProvider>
-        <Sheets /> */}
       <Stack>
         <Stack.Protected guard={isAuthenticated}>
           <Stack.Screen name="(protected)" options={{ headerShown: false }} />
@@ -29,7 +27,6 @@ const InitialLayout = () => {
         </Stack.Protected>
         <Stack.Screen name="index" options={{ headerShown: false }} />
       </Stack>
-      {/* </SheetProvider> */}
     </ThemeProvider>
   );
 };
