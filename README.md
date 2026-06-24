@@ -25,7 +25,7 @@ npx expo start
 
 | Category         | Technology                                            |
 | ---------------- | ----------------------------------------------------- |
-| Framework        | Expo SDK 55, React Native 0.83, React 19              |
+| Framework        | Expo SDK 56, React Native 0.85, React 19              |
 | Navigation       | Expo Router (file-based routing)                      |
 | State management | Redux Toolkit + RTK Query                             |
 | Persistence      | redux-remember, expo-secure-store, react-native-mmkv  |

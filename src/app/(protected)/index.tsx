@@ -1,5 +1,5 @@
-import { Text } from "@react-navigation/elements";
-import { StyleSheet, View } from "react-native";
+// import { Text } from "@react-navigation/elements";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   return (
