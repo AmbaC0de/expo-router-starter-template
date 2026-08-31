@@ -34,11 +34,21 @@
           }
         }
       ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "cmakeVersion": "3.31.6",
+            "enableMinifyInReleaseBuilds": true
+          }
+        }
+      ],
       "expo-secure-store",
       "expo-font",
       "expo-image",
       "expo-web-browser",
-      "@react-native-vector-icons/ionicons"
+      "@react-native-vector-icons/ionicons",
+      "expo-status-bar"
     ],
     "experiments": {
       "typedRoutes": true,
